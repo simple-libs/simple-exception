@@ -12,7 +12,7 @@ class ProcessExceptionParamMixin:
     # noinspection PyMethodMayBeStatic
     def _process_exception_param(
         self,
-        value: type[Exception],
+        value: Exception | type[Exception] | UnsetType,
     ) -> tuple[type[Exception] | UnsetType, str | UnsetType]:
         """
         Processes the provided exception — both classes and instances.

@@ -51,7 +51,7 @@ class SimpleException(
         context: str | UnsetType = UNSET,
         how_to_fix: tuple[str, ...] | str | UnsetType = UNSET,
         error_name: str | UnsetType = UNSET,
-        exception: type[Exception] | UnsetType = UNSET,
+        exception: Exception | type[Exception] | UnsetType = UNSET,
         get_location: bool | int | UnsetType = UNSET,
         skip_locations: tuple[str, ...] | str | UnsetType = UNSET,
         oneline: bool = False,
